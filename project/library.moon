@@ -41,6 +41,7 @@ log = (message, ...) ->
 -- CLASSES --
 class object
     new: (type, attributes = {}) =>
+        
 
 
 class window

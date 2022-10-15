@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "group": "build",
+            "command": "python execute.py",
+            "options": {
+                "cwd": "${workspaceFolder}/scripts",
+                "env": {
+                    "MOON_PATH": "C:/ProgramData/chocolatey/lib/luarocks/luarocks-2.4.4-win32/systree/bin/moonc.bat", // Modify if you're using a different luarocks/moon version
+                    "FILE_PATH": "../project/library.moon", // The path to the moon file that contains the UI library.
+                    "EXECUTE": "false", // DEPRECATED IN VSCODE - PLEASE USE NEXURES EXECUTE EXTENSION
+                }
+            }
+        }
+    ]
+}
