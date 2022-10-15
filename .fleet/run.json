@@ -1,18 +1,33 @@
+// I gave up indenting this
 {
 "configurations": [
-  {
-    "type": "command",
-    "name": "Execute",
-    "workingDir": "scripts/",
-    "program": "C:/Users/liga/AppData/Local/Programs/Python/Python310/python.exe",
-    "environment": {
-      "MOON_PATH": "C:/ProgramData/chocolatey/lib/luarocks/luarocks-2.4.4-win32/systree/bin/moonc.bat", // Modify if you're using a different luarocks/moon version
-      "FILE_PATH": "../project/library.moon", // The path to the moon file that contains the UI library.
-      "EXECUTE": "true", // Want to run it through synapse websocket integration?
-    },
-    "args": [
-      "execute.py"
-    ],
-  },
-  ]
+{
+"type": "command",
+"name": "Execute",
+"workingDir": "scripts/",
+"program": "C:/Users/liga/AppData/Local/Programs/Python/Python310/python.exe",
+"environment": {
+"MOON_PATH": "C:/ProgramData/chocolatey/lib/luarocks/luarocks-2.4.4-win32/systree/bin/moonc.bat", // Modify if you're using a different luarocks/moon version
+"FILE_PATH": "../project/library.moon", // The path to the moon file that contains the UI library.
+"EXECUTE": "true", // Want to run it through synapse websocket integration?
+},
+"args": [
+"execute.py"
+],
+},
+{
+"type": "command",
+"name": "Build",
+"workingDir": "scripts/",
+"program": "C:/Users/liga/AppData/Local/Programs/Python/Python310/python.exe",
+"environment": {
+"MOON_PATH": "C:/ProgramData/chocolatey/lib/luarocks/luarocks-2.4.4-win32/systree/bin/moonc.bat", // Modify if you're using a different luarocks/moon version
+"FILE_PATH": "../project/library.moon", // The path to the moon file that contains the UI library.
+"EXECUTE": "false", // Want to run it through synapse websocket integration?
+},
+"args": [
+"execute.py"
+],
+},
+]
 }
